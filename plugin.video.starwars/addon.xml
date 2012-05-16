@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+  id="plugin.video.starwars"
+  version="0.8.0"
+  name="Star Wars"
+  provider-name="mtubesing">
+  <requires>
+    <import addon="xbmc.python"
+            version="1.0"/>
+    <import addon="script.module.simplejson"
+            version="2.0.10"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+             library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>StarWars.com Video add-on</summary>
+    <description>Watch clips and episodes from the StarWars.com website</description>
+    <platform>all</platform>
+  </extension>
+</addon>
